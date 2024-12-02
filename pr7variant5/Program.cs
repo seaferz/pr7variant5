@@ -25,18 +25,18 @@ do
 //вывод
 Console.WriteLine($"Количество уникальных чисел: {list.Count}");
 
+
+
+
+
+
+
 or
 
-using System;
+Console.WriteLine("Введите числа (последовательность заканчивается 0):");
 
-class Program
-{
-    static void Main()
-    {
-        Console.WriteLine("Введите числа (последовательность заканчивается 0):");
-
-        int uniqueCount = 0; // Количество уникальных чисел
-        int number1 = int.MinValue; // Переменные для хранения уникальных чисел
+        int uniqueCount = 0; // количество уникальных чисел
+        int number1 = int.MinValue; // уникальные числа
         int number2 = int.MinValue;
         int number3 = int.MinValue;
         int currentNumber;
@@ -48,12 +48,12 @@ class Program
             if (currentNumber == 0)
                 break;
 
-            // Проверяем, было ли это число раньше
+            // проверка на уникальность
             if (currentNumber != number1 && currentNumber != number2 && currentNumber != number3)
             {
-                uniqueCount++; // Увеличиваем счетчик уникальных чисел
+                uniqueCount++; 
 
-                // Сохраняем новое уникальное число
+                // сохраняем уникальное число
                 if (number1 == int.MinValue)
                     number1 = currentNumber;
                 else if (number2 == int.MinValue)
